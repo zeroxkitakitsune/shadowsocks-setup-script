@@ -12,8 +12,8 @@
 1. Add script
     - `nano ss-setup.sh`
 1. You can either `git clone` this repo or manually copy all the data from `ss-script.sh` and run it 
-1. Run the script with two arguments, where the first one is your server ip and the second one is your password
-1. Run `bash ss-setup.sh <server_ip> <password>` ***Note: the server will be rebooted***
+1. Run the script with one parameter, where the parameter is your password
+1. Run `bash ss-setup.sh <password>` ***Note: the server will be rebooted***
 
 ## Additional commands
 - To check if your shadowsocks server is running use `sudo systemctl status shadowsocks-libev-server@config`

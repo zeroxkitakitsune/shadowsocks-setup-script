@@ -2,10 +2,10 @@
 snap install shadowsocks-libev
 mkdir -p /var/snap/shadowsocks-libev/common/etc/shadowsocks-libev
 echo "{
-    \"server\":\"$1\",
+    \"server\":\"$(curl ifconfig.me)\",
     \"server_port\":443,
     \"local_port\":1080,
-    \"password\":\"$2\",
+    \"password\":\"$1\",
     \"timeout\":20,
     \"method\":\"chacha20-ietf-poly1305\",
     \"fast_open\":true,
